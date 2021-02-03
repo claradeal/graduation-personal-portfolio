@@ -1,0 +1,149 @@
+.fab,
+.fas {
+  color: #000000;
+}
+* {
+  color: #e3f2fd;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sofia", sans-serif;
+}
+header {
+  height: 20px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e3f2fd;
+}
+.projects-header {
+  background-color: #ffa500;
+  font-family: "Sofia", sans-serif;
+}
+main {
+  background-color: #ffa500;
+}
+section {
+  height: 100%;
+}
+#welcome-section {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+  background-color: #324d67;
+  padding: 50px;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+/* #welcome-section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top-color: #324d67;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
+} */
+h1 {
+  font-family: sofia;
+  width: 100%;
+  font-size: 300%;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  background-color: #324d67;
+  width: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+p {
+  text-align: center;
+}
+.hackathon{
+  color: #324d67;
+}
+#projects {
+  height: 102vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  flex-direction: column;
+  border-top: 4px solid #324d67;
+  border-bottom: 2px solid #000000;
+  background-color: #e5e5e5;
+}
+.project-title img {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+.profile-link {
+  color: #000000;
+}
+.myGitHubIcon {
+  font-size: 18px;
+}
+footer {
+  height: 10vh;
+}
+@media (max-width: 1050px) {
+  #projects {
+    height: 200vh;
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .project-title {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Rules for laptops, small desktop screens and bigger viewports */
+}
+
+@media (min-width: 1200px) {
+  /* Rules for larger desktop screens only */
+}
+@media (max-width: 1199px) {
+  /* Rules for laptops, small desktop screens, and smaller viewports */
+}
+
+@media (max-width: 991px) {
+  /* Rules for tablets and smaller viewports */
+  #projects{
+    height: 150vh;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Rules for smartphones only */
+  #navbar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  #projects{
+    height: 190vh;
+  }
+}
